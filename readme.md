@@ -72,6 +72,10 @@ Always inspect CSV headers programmatically. Non-breaking spaces are common in r
 Output Proof
 Cleaned JSON Output
 
+<img width="1742" height="447" alt="image" src="https://github.com/user-attachments/assets/44d83c3f-8aea-4483-95e2-916e5ae22008" />
+<img width="863" height="763" alt="image" src="https://github.com/user-attachments/assets/ef49f672-eefa-470b-a5b0-e6ce4dfdbb4f" />
+
+
 The script successfully processed 20 records and generated structured JSON data.
 
 
