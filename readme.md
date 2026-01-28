@@ -11,15 +11,13 @@ Python 3.x
 No external libraries required (uses only the Python standard library)
 
 Steps to Run
-# Place the messy CSV file in the project directory
-# or provide an absolute path in the script
+ Place the messy CSV file in the project directory
+ or provide an absolute path in the script
 
-
-# Edit configuration in the script:
-# input_file = "YOUR_FILE_NAME.csv"
-# output_file = "clean_sales.json"
-# usd_to_inr_rate = 83
-
+ Edit configuration in the script:
+ input_file = "YOUR_FILE_NAME.csv"
+ output_file = "clean_sales.json"
+ usd_to_inr_rate = 83
 
 python clean_sales_simple.py
 
@@ -66,9 +64,6 @@ actual_gross_usd = clean_price(
     row.get("Actual\xa0gross", "") or row.get("Actual gross", "")
 )
 
-Lesson Learned:
-Always inspect CSV headers programmatically. Non-breaking spaces are common in real-world datasets and can cause subtle bugs.
-
 Output Proof
 Cleaned JSON Output
 
@@ -79,94 +74,3 @@ Cleaned JSON Output
 The script successfully processed 20 records and generated structured JSON data.
 
 
-Verification Summary
-
-Currency symbols and commas removed
-
-Numeric fields converted to floats
-
-USD values converted to INR using a fixed rate
-
-Output structured in JSON format
-
-Duplicate records removed
-
-Future Improvements
-
-If given additional time, the following enhancements would be implemented:
-
-Data Validation
-
-Schema checks for numeric and date fields
-
-Detection of invalid or outlier values
-
-Validation report generation
-
-Multi-Currency Support
-
-Conversion to multiple currencies
-
-Optional live exchange rate integration
-
-Configurable currency targets
-
-Data Quality Reporting
-
-Summary of processed vs skipped records
-
-Duplicate detection statistics
-
-Distribution analysis of numeric fields
-
-Batch Processing
-
-Ability to process multiple CSV files
-
-Consolidated output generation
-
-Progress tracking for large datasets
-
-Database Export
-
-Optional export to SQLite or PostgreSQL
-
-Structured relational schema
-
-Incremental update support
-
-Logging and Error Handling
-
-Structured logging using Python’s logging module
-
-Error trace files for debugging
-
-Graceful handling of malformed rows
-
-Configuration Files
-
-Support for config.json or config.yaml
-
-Environment-based profiles (development, production)
-
-Performance Optimization
-
-Streaming for very large files
-
-Optional multiprocessing
-
-Profiling and benchmarking
-
-Summary
-
-This project demonstrates a practical ETL workflow with real-world data challenges:
-
-Clean and dependency-free implementation
-
-Robust handling of messy CSV exports
-
-Efficient deduplication and transformation logic
-
-Output suitable for analytics and machine learning use cases
-
-All records were processed successfully with consistent and reliable results.
