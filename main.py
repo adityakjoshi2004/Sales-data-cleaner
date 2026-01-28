@@ -18,7 +18,7 @@ def clean_sales_data(input_file, output_file, usd_to_inr=83):
     clean_data = []
     seen_records = set()
     
-    print(f"📂 Reading file: {input_file}")
+    print(f"Reading file: {input_file}")
     
     with open(input_file, 'r', encoding='utf-8') as file:
         csv_reader = csv.DictReader(file)
@@ -66,9 +66,9 @@ def clean_sales_data(input_file, output_file, usd_to_inr=83):
     with open(output_file, 'w', encoding='utf-8') as json_file:
         json.dump(clean_data, json_file, indent=2, ensure_ascii=False)
     
-    print(f"✅ Data cleaned successfully!")
-    print(f"📊 Total records processed: {len(clean_data)}")
-    print(f"💾 Clean data saved to: {output_file}")
+    print(f" Data cleaned successfully!")
+    print(f" Total records processed: {len(clean_data)}")
+    print(f" Clean data saved to: {output_file}")
     
     return clean_data
 
@@ -81,15 +81,15 @@ if __name__ == "__main__":
     print("\n" + "="*60)
     print("Sales Data Cleaner")
     print("="*60)
-    print(f"📁 Input file: {input_file}")
-    print(f"📁 Output file: {output_file}")
-    print(f"💱 USD to INR rate: {usd_to_inr_rate}")
+    print(f" Input file: {input_file}")
+    print(f" Output file: {output_file}")
+    print(f" USD to INR rate: {usd_to_inr_rate}")
     print("="*60 + "\n")
     
     cleaned_data = clean_sales_data(input_file, output_file, usd_to_inr_rate)
     
     if cleaned_data:
-        print("\n📋 Sample of cleaned data (first 3 records):")
+        print("\n Sample of cleaned data (first 3 records):")
         for i, record in enumerate(cleaned_data[:3], 1):
             print(f"\nRecord {i}:")
             print(f"  Artist: {record['Artist']}")
@@ -98,5 +98,5 @@ if __name__ == "__main__":
             print(f"  Actual Gross (INR): ₹{record['Actual gross (INR)']:,.2f}")
     
     print("\n" + "="*60)
-    print("✅ Process completed successfully!")
+    print("Process completed successfully!")
     print("="*60 + "\n")
