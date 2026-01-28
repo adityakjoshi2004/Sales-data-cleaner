@@ -74,23 +74,7 @@ Cleaned JSON Output
 
 The script successfully processed 20 records and generated structured JSON data.
 
-[
-  {
-    "Rank": "1",
-    "Peak": "1",
-    "All Time Peak": "2",
-    "Actual gross (USD)": 780000000.0,
-    "Actual gross (INR)": 64740000000.0,
-    "Adjusted gross USD (in 2022 dollars)": 780000000.0,
-    "Adjusted gross INR (in 2022 dollars)": 64740000000.0,
-    "Artist": "Taylor Swift",
-    "Tour title": "The Eras Tour",
-    "Year(s)": "2023–2024",
-    "Shows": "56",
-    "Average gross (USD)": 13928571.0,
-    "Average gross (INR)": 1156071393.0
-  }
-]
+
 Verification Summary
 
 Currency symbols and commas removed
